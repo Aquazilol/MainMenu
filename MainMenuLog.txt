@@ -1,0 +1,54 @@
+Unreal Engine version 4.10.0 (will be converted to 4.11 or 4.12 later, when plugins are updated).
+
+PLUGINS NEEDED to run the project correctly:
+-Advanced Sessions MUltilayer (free, but need to credit the author)
+Exposes and adds new fuctions and nodes in blueprints:
+https://forums.unrealengine.com/showthread.php?69901-Advanced-Sessions-Plugin
+
+-Rama's Victory Plugin (free, but need to credit the author)
+100+ Extra Blueprint Nodes
+https://github.com/EverNewJoy/VictoryPlugin
+
+-Rama's UMG Rebindable Key System, Rebind keys at Runtime
+Title says everything.
+https://forums.unrealengine.com/showthread.php?51449-Full-Project-Rama-s-UMG-Rebindable-Key-System-Rebind-keys-at-Runtime!
+
+-Blui (adds html, java, css support to UE):
+Use this release:
+https://github.com/getnamo/BLUI/releases/tag/v3.1.1-dev
+Install guide here I believe:
+https://forums.unrealengine.com/showthread.php?58192-BLUI-Open-Source-HTML5-JS-CSS-HUD-UI
+
+
+
+
+to do:
+
+-host menu (Enrico) 
+-play menu (Enrico)
+-control menu (Enrico)
+-audio menu (Enrico)
+-video menu (Enrico)
+-watch menu (links to embedded youtube tutorials when tutorials created) (Enrico)
+-implement html widgets (through BLUI?) (Dan?)
+-developing trivia widget (takes a formatted/css html file that fits the widget with brief description of trivia, if clicked opens url on user predefined browser), can be tested with lorem ipsum (Dan?)
+-developing news widget (takes a formatted/css html file that fits the widget with news)  (Dan?
+-developing IRC Chat integration (must be done by webdev I believe?, create page with kiwiirc.com ? https://kiwiirc.com/)
+
+low priority list (for beta version):
+-replay watching system (already integrated in UE, but need first to have well working multiplayer sessions first)
+-add OS time
+-soundfx in menu
+-music in menu
+-graphical rework (after html widget integration, end of beta version)
+
+Very low priority:
+-rewrite blueprints and widgets in slate/c++
+
+Please when you do changes add them to changelog.
+
+6/2/2016: pre-Alpha 1.0:
+
+-created the basic layout of main menu and submenus
+-linked the submenus (todo above)
+-the 3 images blocks for chat-trivia-newsfeed can be later removed with html widgets
