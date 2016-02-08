@@ -47,8 +47,29 @@ Very low priority:
 
 Please when you do changes add them to changelog.
 
+
+7/2/2016: pre-Alpha 1.01a
+
+-added BPI_Settings in UI folder, it's a Blueprint interface it allows for a set of functions to be called by other Blueprints (basically allows a blueprint class to get gamesettings and other stuff)
+
+-added SettingsSave parent to SaveGame Class to store the settings (added in it Save Settings for various functions like resolution)
+
+-added SettingsMacroLibrary, it's a macro library we'll use for settings contains:
+GetSettings Macro (gets settings from instance)
+InitializeSettings Macro (initializes settings when called)
+
+-created MM_Settings2 Blueprint, want to stylize the Settings section more fashionly (todo)
+placed event struct to load
+
+-deleted Resolution enumeration in enumeration folder and structure folder, deleted macro referencing the resolution enum, debugged the play widget not opening, deleted Menus folder in UI folder.
+
+
+
 6/2/2016: pre-Alpha 1.0:
 
 -created the basic layout of main menu and submenus
 -linked the submenus (todo above)
 -the 3 images blocks for chat-trivia-newsfeed can be later removed with html widgets
+
+
+
