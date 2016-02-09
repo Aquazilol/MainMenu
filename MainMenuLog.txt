@@ -28,7 +28,6 @@ to do:
 -play menu (Enrico)
 -control menu (Enrico)
 -audio menu (Enrico)
--video menu (Enrico)
 -watch menu (links to embedded youtube tutorials when tutorials created) (Enrico)
 -implement html widgets (through BLUI?) (Dan?)
 -developing trivia widget (takes a formatted/css html file that fits the widget with brief description of trivia, if clicked opens url on user predefined browser), can be tested with lorem ipsum (Dan?)
@@ -47,6 +46,60 @@ Very low priority:
 
 Please when you do changes add them to changelog.
 
+8/2/2016 pre-Alpha 1.01a
+-Removed video settings from to do list above (completed and working, need to create save file to save changes)
+-deleted yesterday added blueprints created lots new, see end of this change
+-deleted old game instance, was causing problems, redone a new one
+
+modified:   Content/Blueprints/PlayerController.uasset
+	
+modified:   Content/Maps/Menus.umap
+
+modified:   Config/DefaultEngine.ini
+
+modified:   Config/DefaultInput.ini
+	
+modified:   Content/Blueprints/Base_GameMode.uasset
+	
+modified:   Content/Blueprints/Enumerations/Menu_States.uasset
+
+modified:   MainMenuLog.txt
+modified:   MainMenuLog.txt
+modified:   Content/UI/MainMenus_Blueprints/MM_Play.uasset
+
+modified:   Content/Blueprints/Hud.uasset
+modified:   Content/UI/MainMenus_Blueprints/MM_Settings.uasset
+
+modified:   Content/UI/MainMenus_Blueprints/MM_Video.uasset
+
+
+new file:   Content/Blueprints/GameInstance_IC.uasset
+	
+new file:   Content/Blueprints/ObjectMacroLibrary.uasset
+	
+new file:   Content/Blueprints/GameInstance_Try2.uasset
+	
+
+new file:   Content/UI/MainMenus_Blueprints/MM_S_V_BTN.uasset
+	
+new file:   Content/UI/MainMenus_Blueprints/MM_S_V_Line.uasset
+	
+new file:   Content/UI/MainMenus_Blueprints/MM_S_V_Res.uasset
+	
+new file:   Content/UI/MainMenus_Blueprints/W_Settings.uasset
+		
+		
+deleted:    Content/UI/MainMenus_Blueprints/MM_Settings2.uasset
+	
+deleted:    Content/Blueprints/GameInstance_Try.uasset
+
+deleted:    Content/UI/MainMenus_Blueprints/BPI_Settings.uasset
+
+deleted:    Content/UI/MainMenus_Blueprints/SettingsMacroLibrary.uasset
+	
+deleted:    Content/UI/MainMenus_Blueprints/SettingsSave.uasset
+	
+
 
 7/2/2016: pre-Alpha 1.01a
 
@@ -62,6 +115,34 @@ InitializeSettings Macro (initializes settings when called)
 placed event struct to load
 
 -deleted Resolution enumeration in enumeration folder and structure folder, deleted macro referencing the resolution enum, debugged the play widget not opening, deleted Menus folder in UI folder.
+
+modified:   Config/DefaultEngine.ini
+#	
+deleted:    Content/Blueprints/Enumerations/Resolution_States.uasset
+#	
+deleted:    Content/Blueprints/GameInstance.uasset
+#	
+new file:   Content/Blueprints/GameInstance_Try.uasset
+#	
+modified:   Content/Blueprints/PlayerController.uasset
+#	
+deleted:    Content/Blueprints/Structures/Struct_Graphic_Settings.uasset
+#	
+modified:   Content/Maps/Menus.umap
+#	
+new file:   Content/UI/MainMenus_Blueprints/BPI_Settings.uasset
+#	
+new file:   Content/UI/MainMenus_Blueprints/MM_Settings2.uasset
+#	
+modified:   Content/UI/MainMenus_Blueprints/MM_Spectate.uasset
+#	
+new file:   Content/UI/MainMenus_Blueprints/SettingsMacro.uasset
+#	
+new file:   Content/UI/MainMenus_Blueprints/SettingsMacroLibrary.uasset
+#	
+new file:   Content/UI/MainMenus_Blueprints/SettingsSave.uasset
+#	
+modified:   MainMenuLog.txt
 
 
 
